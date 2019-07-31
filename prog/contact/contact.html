@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>おといあわせ｜komorikomasha（こもりこましゃ）</title>
+<link rel="stylesheet" href="../common/css/normalize.css">
+<link rel="stylesheet" href="../common/css/style.css">
+</head>
+<body>
+
+<form name="myform" action="confirmation.php" method="post">
+<table width="100%">
+<tbody><tr>
+    <td>お名前</td>
+
+    <td><input name="name" type="text"></td>
+</tr>
+<tr>
+    <td>フリガナ</td>
+    <td><input name="furigana" type="text"></td>
+</tr>
+<tr>
+    <td>メールアドレス</td>
+    <td><input name="address" type="text"></td>
+</tr>
+<tr>
+    <td>電話番号</td>
+    <td><input name="tel" type="text"></td>
+</tr>
+<tr>
+    <td>お問い合わせ内容</td>
+    <td><textarea name="otoiawase"></textarea></td>
+</tr>
+</tbody></table>
+<input onclick="check_contactform()" type="button" value="確認画面へ">
+</form>
+
+function check_contactform() {
+	var name = $('input[name="name"]').val();
+	var furigana = $('input[name="furigana"]').val();
+	var address = $('input[name="address"]').val();
+	var tel = $('input[name="tel"]').val();
+	var otoiawase = $('textarea[name="otoiawase"]').val();
+	var errmsg = "";
+	if(name == "") {
+		errmsg = "お名前を入力して下さい\n";
+	}
+	if(furigana == "") {
+		errmsg = errmsg + "フリガナを入力して下さい\n";
+	}
+	if(address == "") {
+		errmsg = errmsg + "メールアドレスを入力して下さい\n";
+	}
+	if(!address.match(/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/)) {
+		errmsg = errmsg + "メールアドレスをご確認下さい\n";
+	}
+	if(tel == "") {
+		errmsg = errmsg + "電話番号を入力して下さい\n";
+	}
+	if(otoiawase == "") {
+		errmsg = errmsg + "お問い合わせ内容を入力して下さい\n";
+	}
+	if(errmsg != "") {
+		alert(errmsg);
+		return false;
+	}
+	$('form[name="myform"]').submit();
+}
+
+
+</body>
+</html>

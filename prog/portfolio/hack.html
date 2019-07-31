@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--背景変更-->
+<!--<link rel="stylesheet" href="../common/css/sample.css" type="text/css"> -->
+<meta charset="utf-8">
+<title>Hack U 作品紹介｜ホーム｜ひびてこ</title>
+<meta name="description" content="Hack U 中部大学：作品紹介">
+<link rel="stylesheet" href="../common/css/normalize.css">
+<link rel="stylesheet" href="../common/css/style.css">
+</head>
+<body>
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.3"></script>
+
+<div id="page">
+
+<header id="pageHead">
+	<h1 id="siteTitle">Hack U 作品紹介｜ひびてこ</h1>
+	<p id="catchcopy">6/1~6/29に開催されたHack Uで開発した作品の紹介をします。</p>
+	<nav class="globalNavi">
+		<ul>
+			<li><a href="../index.html">ホーム</a></li>
+			<li><a href="../about/index.html">プロフィール</a></li>
+			<li class="current"><a href="index.html">研究について</a></li>
+			<li><a href="../contact/index.html">おといあわせ</a></li>
+		</ul>
+	</nav>
+</header>
+
+<p class="topicPath"><a href="../index.html">ホーム</a> &gt; <a href="../about/index.html">プロフィール</a> &gt; Hack U 作品紹介</p>
+
+<div id="pageBody">
+
+	<div id="pageBodyMain">
+		<article>
+			<header class="articleDetailHead">
+				<h1 class="pageTitle">Hack Time!</h1>
+				<figure>
+					<img src="../images/hack01.jpg" alt="" width="720" height="500">
+				</figure>
+				<p>中部大学とYahoo!株式会社の合同で開催されたHack U！中部大学に参加したので開発した作品の紹介や感想などを書いていきたいと思います。</p>
+			</header>
+   <div id="pageBodyMain">
+       <header class="articleDetailHead">
+         <h1 class="pageTitle">Hack U中部大学とは</h1>
+       </header>
+       <p>プログラミングやデザインを通して、あなたのアイデアを形にしてみませんか？<br>
+        Hack U（ハック・ユー）は、学生のための「ものづくり体験イベント」です。<br>
+        Hackとは、創意工夫のこと。世界中のYahoo!で開催されている開発コンテスト"Hack Day"をベースに、Yahoo! JAPANと教育機関が共同開催しているのが"Hack U"です。
+      </p>
+    </div>
+   <div id="pageBodyMain">
+       <header class="articleDetailHead">
+         <h1 class="pageTitle">発表会の様子</h1>
+       </header>
+
+<!--実際の様子1-->
+<div>
+  <img align="left" src="images/ha8.jpg"/ width="300" height="220">
+  <img align="right" src="images/ha2.jpg"/ width="300" height="220">
+  <br clear="both">
+</div>
+<!--実際の様子2-->
+<div>
+  <img align="left" src="images/ha1.jpg"/ width="300" height="220">
+  <img align="right" src="images/ha3.jpg"/ width="300" height="220">
+  <br clear="both">
+</div>
+</div>
+<div id="pageBodyMain">
+    <header class="articleDetailHead">
+      <h1 class="pageTitle">作品紹介</h1>
+    </header>
+
+    <section class="mainVisual">
+      <h6 class="heading-typeB">目的</h6>
+      <p>今回の開発テーマは「Update!中部大学」でした。<br>
+         チームで、大学の課題点を挙げたところ、満場一致で学食が混んでいることが挙がりました。(本当に昼の時間はめちゃめちゃ混んでいます笑)<br>
+         現状、実際に食堂に行ってみないと状況が確認できない上に空いていない場合、また他の食堂に行くという手間がかかります。<br>
+         そこで、食堂の混雑状況をどこでも確認できるようなサービスを作ろうという事になりました。
+      </p>
+    </section>
+
+    <section class="mainVisual">
+      <h6 class="heading-typeB">手法</h6>
+      <p>混雑状況を推測する方法としてどんなことが挙げられるでしょうか。<br>
+        身近なものだと、駐車場で応用されていますが、警備員の目視や入場ゲートに設置されたセンサーで車両数をカウントするのが主流です。<br>
+        また、レストランやフードコートでの混雑状況を確認できるような手段はまだ実装には至っていないという現状です。<br>
+        そこで私たちのチームでは人の数をカウントして、リアルタイムでの混雑状況を推定することにしました。<br>
+        具体的には、固定カメラで撮影された動画に対して、機械学習によって人を検出し、食堂の座席数と比較することで、混雑度を推定しました。<br>
+        また、取得した人の数をファイルとして出力し、Web上で表示することで、どこからでもひと目で確認できるようなサービスに仕上げました。
+      </p>
+    </section>
+
+    <section class="mainVisual">
+      <h6 class="heading-typeB">結果</h6>
+      <p>実際の人検出の結果はこんな感じです！</p>
+      <div>
+        <img align="left" src="./images/hackex1.JPG"/ width="300" height="220">
+        <img align="right" src="./images/hackex2.JPG"/ width="300" height="220">
+        <br clear="both">
+        <!--<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一食堂のランチです　　　　　　　　　　　　　　　　　　　　　第三食堂のランチです</p>-->
+      <p>今回はYOLOv3という物体検出ネットワークを人のみを検出するように改良して検出に用いました。
+      <br>人の周りに赤いバウンディングボックスがあることが確認できます。
+      <br>このバウンディングボックスの数(人の数)をjsonファイルで出力し、PHPで読みに行くことで、Web上で確認できるようにしました。
+  　  <br>実際のWebページのレイアウトはこんな感じです。</p>
+  <figure>
+    <img src="./images/web.png" alt="" width="500" height="700">
+  </figure>
+    </section>
+      <p>シンプルでわかりやすいレイアウトを心がけました。<br>
+        各食堂の、リアルタイムな混雑状況を表示することで、使用する食堂の偏りを緩和します。<br>
+        またどこも満席だった場合は、移動販売も利用できるため、情報を乗せることで、利用してもらおうと考えています。<br>
+        また、データベースから休講情報を取得して、混雑状況の予測もしてみました。予測に関しては、今後、機械学習による予測も考えています。
+  <section class="mainVisual">
+    <h6 class="heading-typeB">参加した感想</h6>
+      <p>
+        まず、開発をした感想としては、チームでの開発経験がほとんどなく不安な面もありましたが、うまく開発ができたと感じています。
+        4人のチームで、僕はWebページの制作とチームで最年長だったのもあり、チームのまとめ役として、指示をしたりしました。
+        週に一回ミーティングを行い、話し合いをしました。また検出の部分や、Webページのレイアウトなど、みんなで意見を出しながら、
+        完成させました。
+        苦労(工夫)した点としては、プログラム自体の自動化をどう行うかや、Webページでは、表を見やすくしたり、
+        細かい部分ではありますが、データベースとの連携が大変でした。
+        自動化は、時間ごとにプログラムを自動で行うことで実現させました。リアルタイムと言っても１秒ごとにやるのはWeb上で表示するにあたって、非現実的
+        であると考え、一分ごとに検出を行うことにしました。これにより、歩いている人の考慮もある程度できるようになりました。
+        データベースに関しては、時間をみて勉強し、実装することができました。この経験は、財産になるでしょう。
+      </p>
+      <p>
+        また、頂いた意見からも課題点が出てきました。
+        それは、空間の混雑度はわかっていても、テーブルごとの混雑度はわからないということです。
+        例えば、今の手法では、4人がけの席に1人座っている場合に実際は、空いている席に座るケースは少ないと思いますが、席が空いているとカウントしてしまうということです。
+        目標としては、上のケースで、席が埋まっていると出したいと考えています、実現するには、席の判別も必要になるため、今後実装できればと考えています。
+      </p>
+　</section>
+
+<section class="mainVisual">
+  <h6 class="heading-typeB">今後の展望</h6>
+    <p>
+    Hack U発表会の際,違うグループで,食券機販売のアプリの開発を行っていたグループと話をし,2つの作品を組み合わせて、実際に大学に実装しよう！という話になりました。<br>
+    といっても、すぐには実装させてくれなので、大学内のチャレンジサイトに応募し、少しずつ現実化させていこうという方針になりました。
+    うまく実装できたら、便利になるだろうなとすごくワクワクしています。
+    実際に運用しようとすると今までとは違う知識も必要になります。<br>
+    この夏は、インターンに参加したりしながら知識をつける夏にしたいです。
+    </p>
+　</section>
+</article>
+
+<footer class="articleDetailFoot">
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://hibiki810.php.xdomain.jp/portfolio/01.html" data-via="hibiki_810" data-lang="ja" data-count="none" data-dnt="true">ツイート</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <div class="fb-like" data-href="http://hibiki810.php.xdomain.jp/portfolio/hack.html" data-width="" data-layout="box_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+</div>
+	<div id="pageBodySub">
+
+  <section class="newsList">
+    <h2>おしらせ</h2>
+    <ul>
+      <li><time datetime="2019-7-7">2019.07.07</time>
+      Hack Uで開発した作品について記事を書きました</li>
+      <li><time datetime="2019-5-30">2019.05.30</time>
+      7月29日から8月1日に開催される"画像の認識・理解シンポジウム(MIRU2019)"に論文を投稿しました</li>
+      <li><time datetime="2019-5-20">2019.05.20</time>
+      Hack U in 中部大学 に応募しました</li>
+      <li><time datetime="2019-5-13">2019.05.13</time>
+      タピオカを紹介するブログを開設しました<a href="http://hibiki810.php.xdomain.jp/portfolio/01.html"> "記事はこちら"</a></li>
+      <li><time datetime="2019-4-19">2019.04.19</time>
+      ホームページひびてこを開設しました</li>
+      <li><time datetime="2019-04-19">2019.04.19</time>
+      7月7日から7月12日に開催される国際会議(IIAI AAI)に論文を投稿しました<br>タイトルは，'Shape Recovery of Polyp using Blood Vessel Detection and Matching Estimation by U-Net'です</li>
+    </ul>
+  </section>
+    <h2>Facebook</h2>
+      <!--<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhibiki810%2F&tabs=%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3&width=280&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>-->
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhibiki810%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+   </div>
+</div>
+
+<p class="pagetop"><a href="#page">ページの先頭へ戻る</a></p>
+
+<footer id="pageFoot">
+	<p id="copyright"><small>Copyright&copy; 2019 @hibikitoda All Rights Reserved.</small></p>
+</footer>
+
+</div>
+
+</body>
+</html>

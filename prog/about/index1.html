@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Hibiki Toda</title>
+<meta name="description" content="ひびてこホーム">
+<link rel="stylesheet" href="common/css/normalize.css">
+<link rel="stylesheet" href="common/css/style.css">
+
+<script src="common/js/jquery-1.10.1.min.js"></script>
+<script src="common/js/jquery.bxslider/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="common/js/jquery.bxslider/jquery.bxslider.css">
+<script>
+$(document).ready(function() {
+  $('.bxslider').bxSlider({
+    auto: true,
+    speed: 1000,
+    pause: 4000
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="page">
+
+<header id="pageHead">
+	<h1 id="siteTitle">ひびてこ</h1>
+	<p id="catchcopy">愛知県出身22歳，ひびてここと戸田 響生です</p>
+	<nav class="globalNavi">
+		<ul>
+			<li class="current"><a href="index.html">ホーム</a></li>
+			<li><a href="about/index.html">プロフィール</a></li>
+			<li><a href="portfolio/index.html">研究について</a></li>
+			<li><a href="about/index.html">おといあわせ</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div id="pageBody">
+	<section class="mainVisual">
+		<ul class="bxslider">
+			<li>
+				<div class="mainVisualText">
+					<h1>わーすた</h1>
+					<p>the world standard</p>
+				</div>
+				<img src="images/wa-suta3.jpg" width="980" height="700" alt="">
+			</li>
+			<li>
+				<div class="mainVisualText">
+					<h1>深瀬美桜<br>松田美里</h1>
+					<p>タピオカ大好きな二人</p>
+				</div>
+				<img src="images/mio_miri_1.jpg" width="980" height="700" alt="">
+			</li>
+			<li>
+				<div class="mainVisualText">
+					<h1>深瀬美桜</h1>
+					<p>まねきケチャ</p>
+				</div>
+				<img src="images/mio3.jpg" width="980" height="700" alt="">
+			</li>
+		</ul>
+	</section>
+  <!-- ほかのサイトに飛ばす用-->
+	<!--<section class="portfolioIndex">
+		<article>
+			<a href="portfolio/03.html"><img src="portfolio/images/index_03.jpg" width="300" height="163" alt=""></a>
+			<h2><a href="portfolio/03.html">バッタになりたい魔法使い</a></h2>
+			<p>コモモ・ひろましゃ制作のWeb仕掛け絵本<br>合い言葉は、バッタになっちゃえ！</p>
+		</article>
+		<article>
+			<a href="portfolio/02.html"><img src="portfolio/images/index_02.jpg" width="300" height="163" alt=""></a>
+			<h2><a href="portfolio/02.html">WordPressデザインワークブック</a></h2>
+			<p>コモモとひろましゃ二人の共著によるWordPressで本格的なウェブサイトを制作したい方向けの書籍</p>
+		</article>
+		<article>
+			<a href="portfolio/01.html"><img src="portfolio/images/index_01.jpg" width="300" height="163" alt=""></a>
+			<h2><a href="portfolio/01.html">Cafe Debut</a></h2>
+			<p>baserCMSのカフェサイト用汎用テーマ<br>テーマコンテスト2012飲食店系テーマ賞受賞</p>
+		</article>
+	</section>-->
+
+	<section class="news">
+		<h1>おしらせ</h1>
+		<table>
+			<tr>
+				<th><time datetime="2019-04-19">2019年4月19日</time></th>
+				<td>ブログ，ひびたんを開設しました．
+</td>
+			</tr>
+			<tr>
+				<th><time datetime="2019-04-19">2019年4月19日</time></th>
+				<td>
+				7月7日から7月12日に開催される国際会議(IIAI AAI)に論文を投稿しました．<br>タイトルは，'Shape Recovery of Polyp using Blood Vessel Detection and Matching Estimation by U-Net'です．
+				</td>
+			</tr>
+		</table>
+	</section>
+
+</div>
+
+<p class="pagetop"><a href="#page">ページの先頭へ戻る</a></p>
+
+<footer id="pageFoot">
+	<p id="copyright"><small>Copyright&copy; 2019 @hibikitoda All Rights Reserved.</small></p>
+</footer>
+
+</div>
+
+</body>
+</html>

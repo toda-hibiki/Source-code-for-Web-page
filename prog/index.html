@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!--背景変更-->
+<link rel="stylesheet" href="common/css/sample.css" type="text/css">
+<meta charset="utf-8">
+<title>ホーム｜ひびてこ</title>
+<meta name="description" content="ひびてこホーム">
+<meta name="google-site-verification" content="QiLEBsbQZUSSBmv0uzcLtKJVw_np_lryXFgjAcnGjJc" />
+<link rel="stylesheet" href="common/css/normalize.css">
+<link rel="stylesheet" href="common/css/style.css">
+
+<script src="common/js/jquery-1.10.1.min.js"></script>
+<script src="common/js/jquery.bxslider/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="common/js/jquery.bxslider/jquery.bxslider.css">
+<!--スライドショー定義-->
+<script>
+$(document).ready(function() {
+  $('.bxslider').bxSlider({
+    auto: true,
+    speed: 1000,
+    pause: 4000
+  });
+});
+</script>
+</head>
+<body>
+<!-- 本文-->
+<div id="page">
+<header id="pageHead">
+	<h1 id="siteTitle">ひびてこ</h1>
+	<p id="catchcopy">愛知県出身23歳，ひびてここと戸田 響生です</p>
+	<nav class="globalNavi">
+		<ul>
+			<li class="current"><a href="index.html">ホーム</a></li>
+			<li><a href="about/index.html">プロフィール</a></li>
+			<li><a href="portfolio/index.html">研究について</a></li>
+			<li><a href="contact/index.html">おといあわせ</a></li>
+		</ul>
+	</nav>
+</header>
+<!--画像トップ・スライドショー-->
+<div id="pageBody">
+	<section class="mainVisual">
+		<ul class="bxslider">
+			<li>
+				<div class="mainVisualText">
+					<h1>戸田響生</h1>
+					<p>愛知県出身22歳，ひびてここと戸田 響生です<br>ホームページに来てくださりありがとうございます</p>
+				</div>
+				<img src="images/2060.JPG" width="980" height="700" alt="">
+			</li>
+			<li>
+				<div class="mainVisualText">
+					<h1>Hack U</h1>
+					<p>ハッカソンに参加しました<br>記事にまとめています</p>
+				</div>
+				<img src="images/hack01.jpg" width="980" height="700" alt="">
+			</li>
+			<li>
+				<div class="mainVisualText">
+					<h1>研究室</h1>
+					<p>5月中旬から4週間,インド工科大学の生徒がインターンに来ていました</p>
+				</div>
+				<img src="images/IIT.jpg" width="980" height="700" alt="">
+			</li>
+		</ul>
+	</section>
+<!--外部リンクへ(タピオカブログ)-->
+  <section class="portfolioIndex">
+  		<article>
+  			<a href="portfolio/01.html"><img src="portfolio/images/tapi15.jpg" width="280" height="210" alt=""></a>
+  			<h2><a href="portfolio/01.html">tapioka blog</a></h2>
+  			<p>タピオカ紹介ブログ</p>
+  		</article>
+<!--外部リンク(Hack U)-->
+        <article>
+          <a href="portfolio/hack.html"><img src="./images/hack01.jpg" width="280" height="210" alt=""></a>
+          <h2><a href="portfolio/hack.html">Hack U 作品紹介</a></h2>
+          <p>Hack U 作品紹介</p>
+        </article>
+  </section>
+<!--おしらせ-->
+<!--
+  <section class="news">
+		<h1>おしらせ</h1>
+		<table>
+      <tr>
+        <th><time datetime="2019-7-7">2019.07.07</time></th>
+          <td>Hack Uで開発した作品について記事を書きました <a href="http://hibiki810.php.xdomain.jp/portfolio/hack.html"> "記事はこちら"</a>
+          </td>
+      <tr>
+      <tr>
+          <th><time datetime="2019-5-30">2019.05.30</time></th>
+          <td>7月29日から8月1日に開催される"画像の認識・理解シンポジウム(MIRU2019)"に論文を投稿しました
+          </td>
+      <tr>
+      <tr>
+          <th><time datetime="2019-5-20">2019.05.20</time></th>
+          <td>Hack U in 中部大学 に応募しました
+          </td>
+      <tr>
+          <th><time datetime="2019-5-13">2019.05.13</time></th>
+          <td>タピオカを紹介するブログを開設しました<a href="http://hibiki810.php.xdomain.jp/portfolio/01.html"> "記事はこちら"</a>
+		      </td>
+      </tr>
+      <tr>
+			    <th><time datetime="2019-04-19">2019.04.19</time></th>
+		    	<td>ホームページひびてこを開設しました
+          </td>
+		  </tr>
+	  	<tr>
+				  <th><time datetime="2019-04-19">2019.04.19</time></th>
+				  <td>
+				   7月7日から7月12日に開催される国際会議(IIAI AAI)に論文を投稿しました<br>タイトルは，'Shape Recovery of Polyp using Blood Vessel Detection and Matching Estimation by U-Net'です
+				  </td>
+		  </tr>
+		</table>
+	</section> -->
+</div>
+<!--おしらせ・スクロールver-->
+<style type="text/css">
+    .box_srcollbar {
+        overflow:auto;
+        width:800px;
+        height:200px;
+        padding:5px;
+        border:1px solid #000;
+        background-color:#F9F9F9;
+        color:#000;
+        font-size:14px;
+    }
+    .box_title{
+        border:1px solid #000;
+        padding:5px;
+        width:800px;
+        font-weight:bold;
+        font-size:14px;
+        background-color:#CCCCCC;
+        color:#fff;
+    }
+</style>
+
+<div class="box_title">おしらせ</div>
+<div class="box_srcollbar">
+    <strong>2019/07/31</strong> "画像の認識・理解シンポジウム(MIRU2019)"に参加，発表をしてきました.<br>
+    <strong>2019/07/12</strong> 7月8日から7月12日に国際会議(IIAI AAI2019)でオーラル発表をしてきました.<br>
+    <strong>2019/07/07</strong> Hack Uで開発した作品について記事を書きました <a href="http://hibiki810.php.xdomain.jp/portfolio/hack.html"> "記事はこちら"</a> <br>
+    <strong>2019/05/30</strong> 7月29日から8月1日に開催される"画像の認識・理解シンポジウム(MIRU2019)"に論文を投稿しました <br>
+    <strong>2019/05/20</strong> Hack U in 中部大学 に応募しました <br>
+    <strong>2019/05/13</strong> タピオカを紹介するブログを開設しました<a href="http://hibiki810.php.xdomain.jp/portfolio/01.html"> "記事はこちら"</a> <br>
+    <strong>2019/04/19</strong> ホームページひびてこを開設しました <br>
+    <strong>2019/04/19</strong> 7月7日から7月12日に開催される国際会議(IIAI AAI)に論文を投稿しました.<br>
+</div>
+<h2>Facebook</h2>
+  <!--<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhibiki810%2F&tabs=%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3&width=280&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>-->
+  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhibiki810%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</div>
+
+<p class="pagetop"><a href="#page">ページの先頭へ戻る</a></p>
+
+<footer id="pageFoot">
+	<p id="copyright"><small>Copyright&copy; 2019 @hibikitoda All Rights Reserved.</small></p>
+</footer>
+
+</div>
+
+</body>
+</html>
