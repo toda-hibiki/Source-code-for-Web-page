@@ -8,14 +8,14 @@ Webページを作成しておりソースコードの管理も兼ねて公開�
 Information
 -
 - about
-プロフィールなど
-- common
+<br>プロフィールなど
+- common<br>
 cssファイルやjsファイルなど
-- contact
+- contact<br>
 お問合せフォームなど
-- images
+- images<br>
 画像
-- portforio
+- portforio<br>
 研究内容
-- index.html
+- index.html<br>
 メインプログラム
