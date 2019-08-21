@@ -10,7 +10,8 @@ Information
 - about
 <br>プロフィールなど
 - common<br>
-cssファイルやjsファイルなど
+cssファイルやjsファイルなど</br>
+jsファイルでスライドショーの定義などしています
 - contact<br>
 お問合せフォームなど
 - images<br>
