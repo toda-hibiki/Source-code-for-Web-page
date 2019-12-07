@@ -2,11 +2,14 @@
 
 body { color: #333333; }
 
-
+a:hover img {
+opacity: 0.7;
+filter: alpha(opacity=80);
+}
 
 /* リンク */
-a { color: #999966; }
-a:hover { color: #996600; }
+a { color: #ff0000; }
+a:hover { color: #ff0000; }
 
 /* パンくずリスト */
 .topicPath { font-size: 12px; }
