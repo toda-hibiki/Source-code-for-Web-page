@@ -1,14 +1,11 @@
-@media only screen and (max-width:920px) {
+@media only screen and (max-width:1300px) {
 body {
-background-image: url("../../images/washi-pattern-111.jpg");
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center center;
-background-size: auto;
+background-image: url("../../images/a.jpeg");
+background-size: cover;
 }
 }
 
-@media only screen and (min-width:921px) {
+@media only screen and (min-width:1301px) {
 body {
 background-image: url("../../images/washi-pattern-02.jpg");
 background-repeat: no-repeat;
